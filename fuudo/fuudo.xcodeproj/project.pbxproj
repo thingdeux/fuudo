@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56824234286A5DA600F3D2B5 /* UpcomingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56824233286A5DA600F3D2B5 /* UpcomingViewModel.swift */; };
+		56824236286A689400F3D2B5 /* UpcomingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56824235286A689400F3D2B5 /* UpcomingItemView.swift */; };
+		5682423C286A93F900F3D2B5 /* centra-book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5682423B286A93EE00F3D2B5 /* centra-book.otf */; };
+		56824240286AA91100F3D2B5 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5682423F286AA91100F3D2B5 /* OrderedCollections */; };
+		56C47F032868C8E200B6B18A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F022868C8E200B6B18A /* DashboardView.swift */; };
+		56C47F062868C8FB00B6B18A /* BaseContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F052868C8FB00B6B18A /* BaseContainerView.swift */; };
+		56C47F0A2868C9BB00B6B18A /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F092868C9BB00B6B18A /* UpcomingView.swift */; };
+		56C47F0C2868C9C500B6B18A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F0B2868C9C500B6B18A /* ProfileView.swift */; };
+		56C47F102868D0E900B6B18A /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F0F2868D0E900B6B18A /* Color+Extensions.swift */; };
+		56C47F132868D4C500B6B18A /* AccentedImageBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F122868D4C500B6B18A /* AccentedImageBadge.swift */; };
+		56C47F172868DAB800B6B18A /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F162868DAB800B6B18A /* DashboardViewModel.swift */; };
+		56C47F1B2868DFA700B6B18A /* fuudoAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 56C47F1A2868DFA700B6B18A /* fuudoAPI */; };
+		56C47F232868EF4D00B6B18A /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F222868EF4D00B6B18A /* Injection.swift */; };
+		56C47F252868F6CE00B6B18A /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F242868F6CE00B6B18A /* Mocks.swift */; };
+		56C47F27286924E800B6B18A /* Protocols+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F26286924E800B6B18A /* Protocols+Extensions.swift */; };
+		56C47F29286941F100B6B18A /* OrderBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F28286941F100B6B18A /* OrderBadgeView.swift */; };
+		56C47F2B286944C700B6B18A /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F2A286944C700B6B18A /* CircularImageView.swift */; };
+		56C47F2D2869954F00B6B18A /* VerticalAlignment+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47F2C2869954F00B6B18A /* VerticalAlignment+Extensions.swift */; };
+		56D8B0F6286ABACA003647BC /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D8B0F5286ABACA003647BC /* ProductDetailView.swift */; };
+		56DA3C112866801D000AA29D /* fuudoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DA3C102866801D000AA29D /* fuudoApp.swift */; };
+		56DA3C152866801E000AA29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DA3C142866801E000AA29D /* Assets.xcassets */; };
+		56DA3C182866801E000AA29D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DA3C172866801E000AA29D /* Preview Assets.xcassets */; };
+		56DA3C222866801E000AA29D /* fuudoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DA3C212866801E000AA29D /* fuudoTests.swift */; };
+		56DA3C2C2866801E000AA29D /* fuudoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DA3C2B2866801E000AA29D /* fuudoUITests.swift */; };
+		56DA3C2E2866801E000AA29D /* fuudoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DA3C2D2866801E000AA29D /* fuudoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56DA3C1E2866801E000AA29D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56DA3C052866801D000AA29D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56DA3C0C2866801D000AA29D;
+			remoteInfo = fuudo;
+		};
+		56DA3C282866801E000AA29D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56DA3C052866801D000AA29D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56DA3C0C2866801D000AA29D;
+			remoteInfo = fuudo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		560CE2012867D406009A29D4 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
+		56824233286A5DA600F3D2B5 /* UpcomingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewModel.swift; sourceTree = "<group>"; };
+		56824235286A689400F3D2B5 /* UpcomingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingItemView.swift; sourceTree = "<group>"; };
+		5682423B286A93EE00F3D2B5 /* centra-book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "centra-book.otf"; sourceTree = "<group>"; };
+		5682423D286A940400F3D2B5 /* centra-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "centra-medium.otf"; sourceTree = "<group>"; };
+		56C47F022868C8E200B6B18A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		56C47F052868C8FB00B6B18A /* BaseContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseContainerView.swift; sourceTree = "<group>"; };
+		56C47F092868C9BB00B6B18A /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
+		56C47F0B2868C9C500B6B18A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		56C47F0D2868CFD000B6B18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		56C47F0F2868D0E900B6B18A /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		56C47F122868D4C500B6B18A /* AccentedImageBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentedImageBadge.swift; sourceTree = "<group>"; };
+		56C47F162868DAB800B6B18A /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		56C47F222868EF4D00B6B18A /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		56C47F242868F6CE00B6B18A /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		56C47F26286924E800B6B18A /* Protocols+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protocols+Extensions.swift"; sourceTree = "<group>"; };
+		56C47F28286941F100B6B18A /* OrderBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBadgeView.swift; sourceTree = "<group>"; };
+		56C47F2A286944C700B6B18A /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
+		56C47F2C2869954F00B6B18A /* VerticalAlignment+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VerticalAlignment+Extensions.swift"; sourceTree = "<group>"; };
+		56D8B0F5286ABACA003647BC /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		56DA3C0D2866801D000AA29D /* fuudo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fuudo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56DA3C102866801D000AA29D /* fuudoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fuudoApp.swift; sourceTree = "<group>"; };
+		56DA3C142866801E000AA29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56DA3C172866801E000AA29D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56DA3C1D2866801E000AA29D /* fuudoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fuudoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56DA3C212866801E000AA29D /* fuudoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fuudoTests.swift; sourceTree = "<group>"; };
+		56DA3C272866801E000AA29D /* fuudoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fuudoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56DA3C2B2866801E000AA29D /* fuudoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fuudoUITests.swift; sourceTree = "<group>"; };
+		56DA3C2D2866801E000AA29D /* fuudoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fuudoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56DA3C3A286682E6000AA29D /* fuudoAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = fuudoAPI; path = ../fuudoAPI; sourceTree = "<group>"; };
+		56DA3C3B28668321000AA29D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56DA3C0A2866801D000AA29D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56824240286AA91100F3D2B5 /* OrderedCollections in Frameworks */,
+				56C47F1B2868DFA700B6B18A /* fuudoAPI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DA3C1A2866801E000AA29D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DA3C242866801E000AA29D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56824232286A5D9500F3D2B5 /* Upcoming */ = {
+			isa = PBXGroup;
+			children = (
+				56C47F092868C9BB00B6B18A /* UpcomingView.swift */,
+				56824233286A5DA600F3D2B5 /* UpcomingViewModel.swift */,
+				56824235286A689400F3D2B5 /* UpcomingItemView.swift */,
+			);
+			path = Upcoming;
+			sourceTree = "<group>";
+		};
+		56824239286A93B500F3D2B5 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				5682423A286A93C200F3D2B5 /* Fonts */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		5682423A286A93C200F3D2B5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5682423D286A940400F3D2B5 /* centra-medium.otf */,
+				5682423B286A93EE00F3D2B5 /* centra-book.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		56C47F042868C8EB00B6B18A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				56D8B0F4286ABABA003647BC /* DetailViews */,
+				56824232286A5D9500F3D2B5 /* Upcoming */,
+				56C47F142868DAA400B6B18A /* Dashboard */,
+				56C47F052868C8FB00B6B18A /* BaseContainerView.swift */,
+				56C47F0B2868C9C500B6B18A /* ProfileView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		56C47F0E2868D0D000B6B18A /* Helpers+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56C47F112868D49A00B6B18A /* UI */,
+				56C47F222868EF4D00B6B18A /* Injection.swift */,
+				56C47F26286924E800B6B18A /* Protocols+Extensions.swift */,
+			);
+			path = "Helpers+Extensions";
+			sourceTree = "<group>";
+		};
+		56C47F112868D49A00B6B18A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				56C47F0F2868D0E900B6B18A /* Color+Extensions.swift */,
+				56C47F2A286944C700B6B18A /* CircularImageView.swift */,
+				56C47F2C2869954F00B6B18A /* VerticalAlignment+Extensions.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		56C47F142868DAA400B6B18A /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				56C47F122868D4C500B6B18A /* AccentedImageBadge.swift */,
+				56C47F022868C8E200B6B18A /* DashboardView.swift */,
+				56C47F162868DAB800B6B18A /* DashboardViewModel.swift */,
+				56C47F28286941F100B6B18A /* OrderBadgeView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		56C47F192868DFA700B6B18A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56D8B0F4286ABABA003647BC /* DetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				56D8B0F5286ABACA003647BC /* ProductDetailView.swift */,
+			);
+			path = DetailViews;
+			sourceTree = "<group>";
+		};
+		56DA3C042866801D000AA29D = {
+			isa = PBXGroup;
+			children = (
+				56DA3C3A286682E6000AA29D /* fuudoAPI */,
+				56DA3C0F2866801D000AA29D /* fuudo */,
+				56DA3C202866801E000AA29D /* fuudoTests */,
+				56DA3C2A2866801E000AA29D /* fuudoUITests */,
+				56DA3C0E2866801D000AA29D /* Products */,
+				56C47F192868DFA700B6B18A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		56DA3C0E2866801D000AA29D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56DA3C0D2866801D000AA29D /* fuudo.app */,
+				56DA3C1D2866801E000AA29D /* fuudoTests.xctest */,
+				56DA3C272866801E000AA29D /* fuudoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56DA3C0F2866801D000AA29D /* fuudo */ = {
+			isa = PBXGroup;
+			children = (
+				56C47F0D2868CFD000B6B18A /* Info.plist */,
+				56C47F042868C8EB00B6B18A /* Scenes */,
+				56C47F0E2868D0D000B6B18A /* Helpers+Extensions */,
+				56DA3C102866801D000AA29D /* fuudoApp.swift */,
+				56DA3C142866801E000AA29D /* Assets.xcassets */,
+				56824239286A93B500F3D2B5 /* Files */,
+				56DA3C162866801E000AA29D /* Preview Content */,
+				56DA3C3B28668321000AA29D /* README.md */,
+				560CE2012867D406009A29D4 /* TODO.md */,
+			);
+			path = fuudo;
+			sourceTree = "<group>";
+		};
+		56DA3C162866801E000AA29D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				56DA3C172866801E000AA29D /* Preview Assets.xcassets */,
+				56C47F242868F6CE00B6B18A /* Mocks.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		56DA3C202866801E000AA29D /* fuudoTests */ = {
+			isa = PBXGroup;
+			children = (
+				56DA3C212866801E000AA29D /* fuudoTests.swift */,
+			);
+			path = fuudoTests;
+			sourceTree = "<group>";
+		};
+		56DA3C2A2866801E000AA29D /* fuudoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56DA3C2B2866801E000AA29D /* fuudoUITests.swift */,
+				56DA3C2D2866801E000AA29D /* fuudoUITestsLaunchTests.swift */,
+			);
+			path = fuudoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56DA3C0C2866801D000AA29D /* fuudo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56DA3C312866801E000AA29D /* Build configuration list for PBXNativeTarget "fuudo" */;
+			buildPhases = (
+				56DA3C092866801D000AA29D /* Sources */,
+				56DA3C0A2866801D000AA29D /* Frameworks */,
+				56DA3C0B2866801D000AA29D /* Resources */,
+				560CE1FF28679242009A29D4 /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fuudo;
+			packageProductDependencies = (
+				56C47F1A2868DFA700B6B18A /* fuudoAPI */,
+				5682423F286AA91100F3D2B5 /* OrderedCollections */,
+			);
+			productName = fuudo;
+			productReference = 56DA3C0D2866801D000AA29D /* fuudo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56DA3C1C2866801E000AA29D /* fuudoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56DA3C342866801E000AA29D /* Build configuration list for PBXNativeTarget "fuudoTests" */;
+			buildPhases = (
+				56DA3C192866801E000AA29D /* Sources */,
+				56DA3C1A2866801E000AA29D /* Frameworks */,
+				56DA3C1B2866801E000AA29D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56DA3C1F2866801E000AA29D /* PBXTargetDependency */,
+			);
+			name = fuudoTests;
+			productName = fuudoTests;
+			productReference = 56DA3C1D2866801E000AA29D /* fuudoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56DA3C262866801E000AA29D /* fuudoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56DA3C372866801E000AA29D /* Build configuration list for PBXNativeTarget "fuudoUITests" */;
+			buildPhases = (
+				56DA3C232866801E000AA29D /* Sources */,
+				56DA3C242866801E000AA29D /* Frameworks */,
+				56DA3C252866801E000AA29D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56DA3C292866801E000AA29D /* PBXTargetDependency */,
+			);
+			name = fuudoUITests;
+			productName = fuudoUITests;
+			productReference = 56DA3C272866801E000AA29D /* fuudoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56DA3C052866801D000AA29D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					56DA3C0C2866801D000AA29D = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					56DA3C1C2866801E000AA29D = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 56DA3C0C2866801D000AA29D;
+					};
+					56DA3C262866801E000AA29D = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 56DA3C0C2866801D000AA29D;
+					};
+				};
+			};
+			buildConfigurationList = 56DA3C082866801D000AA29D /* Build configuration list for PBXProject "fuudo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56DA3C042866801D000AA29D;
+			packageReferences = (
+				5682423E286AA91100F3D2B5 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = 56DA3C0E2866801D000AA29D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56DA3C0C2866801D000AA29D /* fuudo */,
+				56DA3C1C2866801E000AA29D /* fuudoTests */,
+				56DA3C262866801E000AA29D /* fuudoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56DA3C0B2866801D000AA29D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DA3C182866801E000AA29D /* Preview Assets.xcassets in Resources */,
+				56DA3C152866801E000AA29D /* Assets.xcassets in Resources */,
+				5682423C286A93F900F3D2B5 /* centra-book.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DA3C1B2866801E000AA29D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DA3C252866801E000AA29D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		560CE1FF28679242009A29D4 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\necho \"Starting Linter\"\nif which swiftlint >/dev/null; then\n  swiftlint --strict --config ../.swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56DA3C092866801D000AA29D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C47F032868C8E200B6B18A /* DashboardView.swift in Sources */,
+				56C47F2D2869954F00B6B18A /* VerticalAlignment+Extensions.swift in Sources */,
+				56C47F0A2868C9BB00B6B18A /* UpcomingView.swift in Sources */,
+				56D8B0F6286ABACA003647BC /* ProductDetailView.swift in Sources */,
+				56C47F27286924E800B6B18A /* Protocols+Extensions.swift in Sources */,
+				56DA3C112866801D000AA29D /* fuudoApp.swift in Sources */,
+				56C47F29286941F100B6B18A /* OrderBadgeView.swift in Sources */,
+				56C47F0C2868C9C500B6B18A /* ProfileView.swift in Sources */,
+				56C47F062868C8FB00B6B18A /* BaseContainerView.swift in Sources */,
+				56C47F102868D0E900B6B18A /* Color+Extensions.swift in Sources */,
+				56C47F232868EF4D00B6B18A /* Injection.swift in Sources */,
+				56C47F132868D4C500B6B18A /* AccentedImageBadge.swift in Sources */,
+				56C47F172868DAB800B6B18A /* DashboardViewModel.swift in Sources */,
+				56824234286A5DA600F3D2B5 /* UpcomingViewModel.swift in Sources */,
+				56824236286A689400F3D2B5 /* UpcomingItemView.swift in Sources */,
+				56C47F2B286944C700B6B18A /* CircularImageView.swift in Sources */,
+				56C47F252868F6CE00B6B18A /* Mocks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DA3C192866801E000AA29D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DA3C222866801E000AA29D /* fuudoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DA3C232866801E000AA29D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DA3C2E2866801E000AA29D /* fuudoUITestsLaunchTests.swift in Sources */,
+				56DA3C2C2866801E000AA29D /* fuudoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56DA3C1F2866801E000AA29D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56DA3C0C2866801D000AA29D /* fuudo */;
+			targetProxy = 56DA3C1E2866801E000AA29D /* PBXContainerItemProxy */;
+		};
+		56DA3C292866801E000AA29D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56DA3C0C2866801D000AA29D /* fuudo */;
+			targetProxy = 56DA3C282866801E000AA29D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		56DA3C2F2866801E000AA29D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56DA3C302866801E000AA29D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56DA3C322866801E000AA29D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"fuudo/Preview Content\"";
+				DEVELOPMENT_TEAM = E45L9XJM5K;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fuudo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Fuudo;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = land.josh.fuudo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		56DA3C332866801E000AA29D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"fuudo/Preview Content\"";
+				DEVELOPMENT_TEAM = E45L9XJM5K;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fuudo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Fuudo;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = land.josh.fuudo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		56DA3C352866801E000AA29D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E45L9XJM5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = land.josh.fuudoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fuudo.app/fuudo";
+			};
+			name = Debug;
+		};
+		56DA3C362866801E000AA29D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E45L9XJM5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = land.josh.fuudoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fuudo.app/fuudo";
+			};
+			name = Release;
+		};
+		56DA3C382866801E000AA29D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E45L9XJM5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = land.josh.fuudoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fuudo;
+			};
+			name = Debug;
+		};
+		56DA3C392866801E000AA29D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E45L9XJM5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = land.josh.fuudoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fuudo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56DA3C082866801D000AA29D /* Build configuration list for PBXProject "fuudo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DA3C2F2866801E000AA29D /* Debug */,
+				56DA3C302866801E000AA29D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56DA3C312866801E000AA29D /* Build configuration list for PBXNativeTarget "fuudo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DA3C322866801E000AA29D /* Debug */,
+				56DA3C332866801E000AA29D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56DA3C342866801E000AA29D /* Build configuration list for PBXNativeTarget "fuudoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DA3C352866801E000AA29D /* Debug */,
+				56DA3C362866801E000AA29D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56DA3C372866801E000AA29D /* Build configuration list for PBXNativeTarget "fuudoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DA3C382866801E000AA29D /* Debug */,
+				56DA3C392866801E000AA29D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5682423E286AA91100F3D2B5 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5682423F286AA91100F3D2B5 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5682423E286AA91100F3D2B5 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		56C47F1A2868DFA700B6B18A /* fuudoAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = fuudoAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 56DA3C052866801D000AA29D /* Project object */;
+}
